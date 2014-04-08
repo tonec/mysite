@@ -1,5 +1,24 @@
-/*
- * ==========================================================
- * Menu styles
- * ==========================================================
- */
+// ==========================================================
+// Menu styles
+// ==========================================================
+
+/* logo */
+.header-wrap {
+	background-color: #262626;
+	padding: 19px; 
+}
+header h2 {
+	position: relative;
+	width: 365px;
+	height: 34px;
+	font-size: 18px;
+	margin: 0;
+}
+header h2 span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 365px;
+	height: 34px;
+	background: url(/img/logo.png) 0 0;
+}

@@ -1,4 +1,3 @@
-
 // ==========================================================================
 // Core & ui components
 // ==========================================================================
@@ -14,19 +13,11 @@
         "components/_core-page-footer",
         "components/_ui-gradient",
         "components/_ui-pod",
-        "components/_ui-search-box",
         "components/_ui-button",
-        "components/_ui-form",
-        "components/_ui-tooltip",
-        "components/_ui-table",
-        "components/_ui-progress-bar",
-        "components/_ui-tabs",
-        "components/_ui-pointer",
-        "components/_ui-icon",
-        "components/_ui-dialog",
-        "components/_ui-share";
+        "components/_ui-icon";
 
 // ==========================================================================
 // Section & page specific
 // ==========================================================================
 
+@import "sections/_page-home";

@@ -1,7 +1,7 @@
 
-/* ==========================================================================
-	 Mobile First
-========================================================================== */
+// ==========================================================================
+// 	 Mobile First
+// ==========================================================================
 	 
 @import "__all";
 
@@ -14,7 +14,6 @@
 
 	@include ui-pod-min481;
 	@include ui-icon-min481;
-	@include ui-progress-bar-min481;
 }
 
 @media all and (min-width: 768px) {
@@ -26,16 +25,8 @@
 @media all and (min-width: 769px) {
 
 	@include core-layout-min769;
-
-	@include ui-tabs-min769;
-	@include ui-table-min769;
 }
 
 
 // Incidental breakpoints
-
-@media all and (min-width: 630px) and (max-width: 768px) {
-	
-	@include core-layout-min630-max768;
-}
 

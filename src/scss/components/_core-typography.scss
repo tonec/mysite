@@ -1,26 +1,9 @@
-
 // ==========================================================================
 // Typography
 // ==========================================================================
 
 body {
-	background-color: #ebebeb;
-	color: #444;
 	font: 13px/1.2 $sans;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-}
-
-body .deadlink { background-color: yellow; color: #d83240; }
-
-h1, h2, h3, h4, h5, h6, th,
-.tab-nav a {
-	color: #444;
-	font-family: $foco;
-	margin-bottom: 14px;
-	text-rendering: optimizeLegibility;
-	word-wrap: break-word;
 }
 
 h1 { font-size: 26px; font-weight: bold; }
@@ -29,8 +12,6 @@ h3 { font-size: 21px; }
 h4 { font-size: 18px; }
 h5 { font-size: 18px; margin-bottom: 4px; }
 h6 { font-size: 14px; }
-
-fieldset h2 { font-size: 21px; }
 
 p { margin: 0 0 18px; line-height: 1.6em; text-rendering: optimizeLegibility; }
 

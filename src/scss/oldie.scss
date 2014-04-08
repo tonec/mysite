@@ -1,7 +1,7 @@
 
-/* ==========================================================================
-   Oldie, applies to IE 8 and below
-========================================================================== */
+// ==========================================================================
+// Oldie, applies to IE 8 and below
+// ==========================================================================
 
 @import "__all";
 
@@ -9,10 +9,7 @@
 @include core-layout-min481;
 @include core_typography_min481;
 @include core-page-min481;
-@include core-layout-min630-max768;
 @include core-layout-min769;
 
 @include ui-pod-min481;
 @include ui-icon-min481;
-@include ui-tabs-min769;
-@include ui-table-min769;

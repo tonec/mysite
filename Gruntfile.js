@@ -40,6 +40,8 @@ module.exports = function( grunt ) {
 			dev: {
 				options: {
 					style: 'expanded',
+					debugInfo: true,
+					lineNumbers: true,
 					banner: '<%= tag.banner %>',
 					compass: true
 				},
@@ -62,7 +64,10 @@ module.exports = function( grunt ) {
 		watch: {
 			sass: {
 				files: '<%= project.src %>/scss/{,*/}*.{scss,sass}',
-				tasks: ['sass:dev']
+				tasks: ['sass:dev'],
+				options: {
+					livereload: true
+				}
 			}
 		}
 	});
