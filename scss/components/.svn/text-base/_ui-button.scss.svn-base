@@ -1,0 +1,99 @@
+
+// ==========================================================================
+// Button
+// ==========================================================================
+
+.button {
+	@include appearance( none );
+	@include border-radius( $corner-radius );
+	@include transition( 0.1s linear background-color );
+	background-color: $red;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	cursor: pointer;
+	display: inline-block;
+	font-family: $foco;
+	font-size: 16px;
+	padding: 11px 45px;
+	text-align: center;
+	text-decoration: none;
+	margin-bottom: 18px;
+}
+
+.button:hover { background-color: #d1252d; color: #fff; text-decoration: none; }
+
+.button + .button { margin-left: 20px; }
+.button--fullwidth + .button--fullwidth { margin-left: 0; }
+
+.button--large { font-size: 18px; padding: 15px 55px; }
+
+.button--grey { background-color: #ddd; color: #444; }
+.button--grey:hover,
+.button--grey:focus { background-color: #ccc; color: #444; }
+
+.button--black { background-color: #333; color: #fff; }
+.button--black:hover,
+.button--black:focus { background-color: #000; color: #fff; }
+
+
+// Event specific
+
+.page-event-type-swim .button--event,
+.reg-event-type-swim .button--event,
+.button--swim { background-color: $swim-bg; color: #fff; }
+.reg-event-type-swim .button--event:hover,
+.button--swim:hover,
+.button--swim:focus { background-color: #0b93c0; color: #fff; }
+
+.button--run { background-color: $run-bg; color: $run-txt; }
+.button--run:hover,
+.button--run:focus { background-color: #d1252d; color: $run-txt; }
+
+.reg-event-type-cycle .button--event,
+.button--cycle { background-color: $cyc-bg; color: $cyc-txt; }
+.reg-event-type-cycle .button--event:hover,
+.button--cycle:hover,
+.button--cycle:focus { background-color: #bcc725; color: $cyc-txt; }
+
+
+.button--fullwidth {
+	margin-bottom: 20px;
+	padding-left: 0;
+	padding-right: 0;
+	width: 100%;
+}
+
+
+// Social Buttons
+
+.button--facebook { position: relative; display: inline-block; }
+.fb-icon {
+	background: transparent url(/assets/layouts/SR14/images/ui/sprite.png) no-repeat -540px 9px;
+	border-right: 1px solid #244078;
+	display: block;
+	height: 39px;
+	left: 0;
+	position: absolute;
+	top: 0 ;
+	width: 39px;
+}
+.button--facebook input,
+.button--facebook input a { background-color: $facebook-blue; padding-left: 72px; padding-right: 72px; }
+
+.button--facebook input:hover,
+.button--facebook input a:hover { background-color: #324d85; }
+
+
+
+// Paypal button
+
+
+.button--paypal input {
+	@include border-radius( $corner-radius );
+	background: transparent url(/assets/layouts/SR14/images/content/donate/paypal_button.png) no-repeat 50% 50%;
+	color: transparent;
+}
+.button--paypal input:hover {
+	color: transparent;
+}

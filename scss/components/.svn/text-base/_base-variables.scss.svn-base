@@ -1,0 +1,53 @@
+
+// ==========================================================================
+// Variables
+// ==========================================================================
+
+
+
+// UI colors
+
+$red: #e42932;
+$black: #1d1d1d;
+$white: #fff;
+$green: #d3de43;
+$blue: #0f9fcf;
+
+$dark-grey: #666;
+$medium-grey: #ccc;
+$light-grey: #eee;
+
+$facebook-blue: #3b5997;
+
+// Social colors
+
+$twitter: #31b9e4;
+$facebook: #3b5997;
+$linkedin: #0076b8;
+$google: #df4b32;
+
+
+// Event colors
+
+// Run
+$run-bg: #e42932;
+$run-hd: #fff;
+$run-txt: #fff;
+
+// Cycle
+$cyc-bg: #d3de43;
+$cyc-hd: #48763a;
+$cyc-txt: #48763a;
+
+// Swim
+$swim-bg: #0f9fcf;
+$swim-hd: #fff;
+$swim-txt: #004e6A;
+
+$foco: "foco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$sans: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+
+
+// Rounded corners
+
+$corner-radius: 3px;

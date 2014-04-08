@@ -1,0 +1,83 @@
+
+// ==========================================================================
+// Icon
+// ==========================================================================
+
+
+// Icon List
+// Assumes the following markup:
+// <ul class="icon-list">
+//		<li><p> <!-- content --> </p></li>
+// </ul>
+
+.icon-list { margin-bottom: 20px; list-style: none }  
+.icon-list li { margin-left: 0; clear: left; }
+.icon-list li p { margin: 5px 0 5px 40px; background-color: #fff; padding: 8px 0 8px 6px; font-weight: normal; }
+.icon-list li .icon { float: left; }
+
+.icon { 
+	background-image: url(/assets/layouts/SR14/images/icons/icons_sprite.png);
+	background-repeat:no-repeat;
+	display: block;
+	width: 40px;
+	height: 46px;
+}
+
+.page-event-type-run .icon { background-position: 0 50%;  } 
+.page-event-type-cycle .icon { background-position: -160px 50%;  } 
+.page-event-type-swim .icon { background-position: -320px 50% }
+
+
+// Event Directions
+.page-event-type-run .icon-bus { background-position: 0 0; }
+.page-event-type-run .icon-car { background-position: -80px 0; }
+.page-event-type-run .icon-train { background-position: -40px 0; }
+.page-event-type-run .icon-meetingpoint { background-position: -120px 0; }
+
+.page-event-type-cycle .icon-bus { background-position: 0 -52px; }
+.page-event-type-cycle .icon-car { background-position: -80px -52px; }
+.page-event-type-cycle .icon-train { background-position: -40px -52px; }
+.page-event-type-cycle .icon-meetingpoint { background-position: -120px -52px; }
+
+.page-event-type-swim .icon-bus { background-position: 0 -102px; }
+.page-event-type-swim .icon-car { background-position: -80px -102px; }
+.page-event-type-swim .icon-train { background-position: -40px -102px; }
+.page-event-type-swim .icon-meetingpoint { background-position: -120px -102px; }
+
+
+// Event Facilities
+.page-event-type-run .changing_facilities { background-position: -160px 0; }
+.page-event-type-run .carparking,
+.page-event-type-run .roadside_carparking { background-position: -390px 0; }
+.page-event-type-run .disabled_carparking { background-position: -433px 0; width: 44px; }
+.page-event-type-run .dogs { background-position: -200px 0; }
+.page-event-type-run .toilets { background-position: -300px 0; width: 50px; }
+.page-event-type-run .disabled_toilets { background-position: -241px 0; width: 58px; }
+.page-event-type-run .wheelchair { background-position: -350px 0; }
+.page-event-type-run .baggage { background-position: -480px 0; width: 50px; }
+
+.page-event-type-cycle .changing_facilities { background-position: -160px -50px; }
+.page-event-type-cycle .carparking,
+.page-event-type-cycle .roadside_carparking { background-position: -390px -50px; }
+.page-event-type-cycle .disabled_carparking { background-position: -433px -50px; width: 44px; }
+.page-event-type-cycle .dogs { background-position: -200px -50px; }
+.page-event-type-cycle .toilets { background-position: -300px -50px; width: 50px; }
+.page-event-type-cycle .disabled_toilets { background-position: -241px -50px; width: 58px; }
+.page-event-type-cycle .wheelchair { background-position: -350px -50px; }
+.page-event-type-cycle .baggage { background-position: -480px -50px; width: 50px; }
+
+.page-event-type-swim .changing_facilities { background-position: -160px -100px; }
+.page-event-type-swim .carparking,
+.page-event-type-swim .roadside_carparking { background-position: -390px -100px; }
+.page-event-type-swim .disabled_carparking { background-position: -433px -100px; width: 44px; }
+.page-event-type-swim .dogs { background-position: -200px -100px; }
+.page-event-type-swim .toilets { background-position: -300px -100px; width: 50px; }
+.page-event-type-swim .disabled_toilets { background-position: -241px -100px; width: 58px; }
+.page-event-type-swim .wheelchair { background-position: -350px -100px; }
+.page-event-type-swim .baggage { background-position: -480px -100px; width: 50px; }
+
+
+@mixin ui-icon-min481 {
+
+	.icon-list li p { padding: 8px 0 8px 18px; }
+}

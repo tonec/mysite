@@ -1,0 +1,101 @@
+
+// ==========================================================================
+// Layout
+// ==========================================================================
+
+html, body, .page { height: 100%; min-width: 320px; }
+
+body > .page { height: auto; min-height: 100%; width: 100%; }
+
+.wrapper { padding-bottom: 150px; width: 100%; }
+
+body > .footer {
+	clear: both;
+	min-height: 150px;
+	margin-top: -140px;
+	position: relative;
+}
+
+.layout-wrap { margin: 0 auto; max-width: 1220px; width: 100%; }
+
+
+.header { margin-bottom: 30px; }
+
+.header > .layout-wrap > .inner,
+.progress-bar > .layout-wrap > .inner,
+.promo > .layout-wrap > .inner,
+.intro > .layout-wrap > .inner,
+.content > .layout-wrap > .inner,
+.footer > .layout-wrap > .inner { margin: 0 10px; position: relative; }
+
+.footer > .layout-wrap > .inner { padding: 10px 0; }
+
+
+/* Sub Content */
+.sub-content section .inner-wrap { margin: 0 auto 10px; }
+.sub-content .sub-1 .inner-wrap { margin-left: 0; }
+
+
+/* Form */
+form .content > .layout-wrap > .main-content > .inner { padding: 0; }
+
+
+@mixin core-layout-min481 {
+
+	.footer > .layout-wrap > .inner { padding: 0; }
+
+	/* Sub Content */
+	.sub-content { margin-bottom: 18px; }
+	.sub-content section .inner-wrap { margin: 0 auto 20px; }
+	.sub-content .sub-1 .inner-wrap { margin-left: 0; }
+
+	.sub-content.two section { float: left; width: 50%; }
+	.sub-content.two section .inner-wrap { margin: 0 8px; }
+	.sub-content.two .sub-1 .inner-wrap { margin-left: 0; }
+	.sub-content.two .sub-2 .inner-wrap { margin-right: 0; }
+}
+
+@mixin core-layout-min630-max768 {
+
+	.pod.two { float: left; width: 50%; }
+	.pod.two .pod-inner { margin: 0 10px; }
+	.pod.two.first .pod-inner { margin-left: 0; }
+	.pod.two.last .pod-inner { margin-right: 0; }
+}
+
+@mixin core-layout-min768 {
+
+	/* Sidebar */
+	.main-content.aside { padding-right: 320px; }
+	.main-content.aside-outside { padding-right: 300px }
+	.main-content.aside .primary { float: left; width: 100%; }
+	
+	.sub-content.three section { float: left; width: 33.3%; }
+	.sub-content.three section .inner-wrap { margin: 0 8px; }
+	.sub-content.three .sub-1 .inner-wrap { margin-left: 0; }
+	.sub-content.three .sub-3 .inner-wrap { margin-right: 0; }
+}
+
+@mixin core-layout-min769 {
+
+	.header > .layout-wrap > .inner,
+	.progress-bar > .layout-wrap > .inner,
+	.promo > .layout-wrap > .inner,
+	.intro > .layout-wrap > .inner,
+	.content > .layout-wrap > .inner,
+	.footer > .layout-wrap > .inner { margin: 0 20px; }
+				
+	/* Sidebar */
+	.main-content.aside { padding-right: 320px; }
+	.main-content.aside-outside { padding-right: 300px }
+	.main-content.aside .primary { float: left; width: 100%; }
+
+	.main-content.aside aside {
+		float: right;
+		margin-right: -320px;
+		width: 280px;
+		padding: 20px;
+	}
+
+	.main-content.aside-outside aside { margin-left: 20px; margin-right: -300px; width: 280px; padding: 0; }
+}

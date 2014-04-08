@@ -1,0 +1,75 @@
+
+// ==========================================================================
+// Tabs
+// ==========================================================================
+
+.tab-nav { display: table; width: 100%; }
+.tab-nav ul { display: table-row; margin-bottom: 0; }
+.tab-nav li {
+	display: table-cell;
+	list-style: none;
+	margin: 0;
+	vertical-align: middle;
+}
+
+.tab-nav .active a { background-color: #fff; }
+
+.tab-nav a {
+	@include border-radius( $corner-radius $corner-radius 0 0 );
+	background-color: #d6d4d0;
+	color: #333;
+	display: block;
+	font-size: 15px;
+	margin: 0 5px;
+	padding: 16px 0;
+	text-align: center;
+	text-decoration: none;
+}
+.tab-nav .first a { margin-left: 0; }
+.tab-nav .last a { margin-right: 0; }
+
+.tab-nav.tabs-2 li { width: 50%; }
+.tab-nav.tabs-3 li { width: 33.333%; }
+.tab-nav.tabs-4 li { width: 25%; }
+
+.lt-ie8 .tab-nav.tabs-3 li { width: 33%; }
+.lt-ie8 .tab-nav.tabs-4 li { width: 24.8%; }
+
+// Dotted tabs
+.tabs-dot { text-align: center; }
+.tabs-dot ul { display: inline-block; }
+.tabs-dot li {
+	display: inline-block;
+	height: 15px;
+	margin: 0 4px;
+	position: relative;
+	width: 15px;
+	line-height: 18px;
+}
+.lt-ie8 .tabs-dot li { display: inline; zoom: 1; }
+.tabs-dot li a {
+	border-bottom: 0;
+	height: 15px;
+	text-align: center;
+	width: 15px;
+	text-decoration: none;
+}
+.tabs-dot li span {
+	@include border-radius( 30px );
+	background-color: #e1e1e1;
+	height: 15px;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 15px;
+}
+
+
+.lt-ie8 .tab-nav li { float: left; min-height: 40px; }
+
+
+@mixin ui-tabs-min769 {
+	
+		.tab-nav a { font-size: 20px; padding: 20px 0; }
+}

@@ -1,0 +1,58 @@
+
+// ==========================================================================
+// Progress Bar
+// ==========================================================================
+
+.progress-bar { border: 0; margin: 40px auto 30px; width: 100%; max-width: 1035px; }
+.progress-bar li {
+	@include box-sizing( "border-box" );
+	margin: 0;
+	padding: 0 !important;
+	width: 25%;
+}
+.progress-bar .five-step li { width: 20%; }
+.progress-bar .row { border: 0; padding: 0; }
+
+.progress-bar li a {
+	display: block;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 11px 0;
+	text-align: center;
+	text-decoration: none;
+	font-family: $foco;
+}
+
+.progress-bar li a > span { display: block; }
+.progress-bar li a span .title { display: none; }
+
+
+.progress-bar li.first { @include border-radius( $corner-radius 0 0 $corner-radius ); }
+.progress-bar li.last { @include border-radius( 0 $corner-radius $corner-radius 0 ); border: 0; }
+
+/* Progress bar - status normal */
+.progress-bar li { background-color: #267b9d; }
+.progress-bar li a { color: #93bdce; }
+.progress-bar li a > span { border-right: 2px solid #4b8fab; }
+
+/* Progress bar - status active */
+.progress-bar li.active { background-color: #4aa7cc; }
+.progress-bar li.active a { color: #fff; }
+.progress-bar li.active a > span { border: 0; }
+
+/* Progress bar - status done */
+.progress-bar li.done { background-color: #aee1f4; }
+.progress-bar li.done a { color: #4aa7cc; }
+.progress-bar li.done a > span { border: 0; }
+
+.progress-bar li.last a > span { border: 0; }
+
+/* Progress Bar - IE7 */
+.lt-ie8 .progress-bar li { float: left; }
+
+@mixin ui-progress-bar-min481 {
+
+	.progress-bar li a { font-size: 16px; }
+	.progress-bar li a span .step { display: none; }
+	.progress-bar li a span .title { display: block; }
+}
