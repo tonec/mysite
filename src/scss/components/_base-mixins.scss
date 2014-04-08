@@ -57,7 +57,6 @@
 }
 
 @mixin opacity( $arg ) {
-  filter: alpha(opacity=($arg * 100));
   -moz-opacity: $arg;
   -khtml-opacity: $arg;
   -webkit-opacity: $arg;

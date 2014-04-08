@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/tonec/mysite",
   "devDependencies": {
-    "grunt": "^0.4.4"
+    "grunt": "^0.4.4",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "matchdep": "^0.3.0",
+    "grunt-sass": "^0.12.1",
+    "grunt-compass": "^0.3.9"
   }
 }
