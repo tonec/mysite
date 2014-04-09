@@ -12,18 +12,12 @@ module.exports = function( grunt ) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON( 'package.json' ),
 		project: {
-			src: 'src',
-			cssStyle: [
-				'<%= project.src %>/scss/styles.scss'
-			],
-			cssOldie: [
-				'<%= project.src %>/scss/oldie.scss'
-			],
-			cssPrint: [
-				'<%= project.src %>/scss/print.scss'
+			assets: 'assets',
+			cssIndex: [
+				'<%= project.assets %>/less/index.less'
 			],
 			js: [
-				'<%= project.src %>/js/*.js'
+				'<%= project.assets %>/js/*.js'
 			]
 		},
 		tag: {
@@ -36,35 +30,28 @@ module.exports = function( grunt ) {
 				' * Copyright <%= pkg.copyright %>. <%= pkg.license %> licensed.\n' +
 				' */\n'
 		},
-		sass: {
+		less: {
 			dev: {
 				options: {
-					style: 'expanded',
-					debugInfo: true,
-					lineNumbers: true,
-					banner: '<%= tag.banner %>',
-					compass: true
+					paths: ['<%= project.assets %>/css']
 				},
 				files: {
-					'css/style.css': '<%= project.cssStyle %>',
-					'css/oldie.css': '<%= project.cssOldie %>',
-					'css/print.css': '<%= project.cssPrint %>'
+					'<%= project.assets %>/css/index.css': '<%= project.cssIndex %>'
 				}
 			},
 			dist: {
 				option: {
-					style: 'compressed',
-					compass: true
+					paths: ['<%= project.assets %>/css']
 				},
 				files: {
-					'css/style.css': '<%= project.css %>'
+					'<%= project.assets %>/css/index.css': '<%= project.cssIndex %>'
 				}
 			}
 		},
 		watch: {
-			sass: {
-				files: '<%= project.src %>/scss/{,*/}*.{scss,sass}',
-				tasks: ['sass:dev'],
+			less: {
+				files: '<%= project.assets %>/less/{,*/}*.less',
+				tasks: ['less:dev'],
 				options: {
 					livereload: true
 				}
@@ -78,7 +65,7 @@ module.exports = function( grunt ) {
 	// Default task
 	// Run Grunt on cmd line
 	grunt.registerTask('default', [
-		'sass:dev',
+		'less:dev',
 		'watch'
 	]);
 };

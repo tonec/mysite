@@ -23,5 +23,5 @@ require.config({
     }
 });
 
-requirejs(['js/index.js']);
+requirejs(['/assets/js/index.js']);
 
