@@ -2,9 +2,10 @@
 // Layout
 // ==========================================================================
 
-html, body { height: 100%; min-width: 320px; }
-
-
+html, body {
+	height: 100%;
+	min-width: 320px;
+}
 
 @mixin core-layout-min481 {
 
@@ -16,9 +17,9 @@ html, body { height: 100%; min-width: 320px; }
 
 @mixin core-layout-min769 {
 	
-	header,
-	.promo,
-	.main,
-	footer { max-width: 1200px; margin: 0 auto; }
+	header, .promo, .main, footer {
+		max-width: 1170px;
+		margin: 0 auto;
+	}
 
 }
