@@ -1712,9 +1712,15 @@ footer ul.social-icons li a:hover {
   section#slider .carousel-control {
     width: 10%;
   }
+  section#team .member {
+    max-width: 650px;
+    margin: 0 auto;
+  }
   section#team .member .photo {
     max-width: none;
     width: 100%;
+    max-width: 250px;
+    max-height: 250px;
   }
   section#portfolio .details .row {
     margin-top: 0;
