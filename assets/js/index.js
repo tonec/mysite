@@ -43,7 +43,7 @@ define(['jquery', 'bootstrap', 'setup', 'twitter', 'portfolio', 'testimonials', 
 				thumbsPerRow: 3,
 				scrollOffset: $('#main-nav .navbar-header').innerHeight(),
 				autoScroll: true,
-				heightToWidthRatio: 3/4,
+				heightToWidthRatio: 1/1,
 				loadingIconClass: $('.preloader>i').attr('class')
 			});
 		}
