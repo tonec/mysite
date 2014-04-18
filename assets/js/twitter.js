@@ -1,8 +1,3 @@
-/*
- *  Project: Twitter Plugin for the WanChai template
- *  Description: Displays tweets in the WanChai template
- *  Author: Simon Li
- */
 
 ;(function($, window, undefined){
 	var defaults = {

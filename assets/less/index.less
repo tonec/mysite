@@ -4,7 +4,7 @@
 
 // Color scheme
 
-@color1: #ff7777; // primary color
+@color1: #000; // primary color
 @color2: #fff; // white
 @color3: #000; // black
 
@@ -974,10 +974,10 @@ section{
 				h1{
 					color: @color2;
 					font-size: 40px;
-					font-weight: 100;
+					font-weight: bold;
 					padding: 5px 0;
 					text-transform: none;
-					margin-bottom: 10px;
+					margin-bottom: 0;
 
 					&:after{
 						display: none;
@@ -1047,10 +1047,10 @@ section{
 	&#services{
 		.service{
 			h3{
-				font-weight: 100;
+				font-weight: bold;
 				text-transform: uppercase;
 				letter-spacing: 1px;
-				font-size: 18px;
+				font-size: 50px;
 			}
 
 			p{
@@ -1228,12 +1228,13 @@ section{
 		}
 
 		ul.thumbnails{
-			margin: 0;
+			margin: 0 auto;
 			padding: 0;
 			list-style: none;
 			position: relative;
 			.transition(~'height .3s ease');
 			z-index: 2;
+			width: 828px;
 
 			&>li.thumbnail{
 				width: 25%;	
@@ -1803,9 +1804,6 @@ footer{
 			.item .carousel-caption{
 				margin-bottom: -140px;
 
-				h1{
-					font-size: 100px;
-				}
 				p{
 					font-size: 24px;
 					line-height: 36px;

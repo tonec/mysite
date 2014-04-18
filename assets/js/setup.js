@@ -1,8 +1,3 @@
-/*
- *  Project: WanChai Setup Plugin
- *  Description: Plugins for setting up navigation, slider, the team section, scrolling, and parallax in the WanChai template
- *  Author: Simon Li
- */
 
  ;(function ( $, window, undefined ) {
 	var document = window.document,

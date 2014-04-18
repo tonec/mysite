@@ -48,10 +48,26 @@ module.exports = function( grunt ) {
 				}
 			}
 		},
+		jshint: {
+			all: ['Gruntfile.js', 'js/*.js']
+		},
 		watch: {
+			html: {
+				files: 'index.html',
+				options: {
+					livereload: true
+				}
+			},
 			less: {
 				files: '<%= project.assets %>/less/{,*/}*.less',
 				tasks: ['less:dev'],
+				options: {
+					livereload: true
+				}
+			},
+			js: {
+				files: '<%= project.assets %>/js/*.js',
+				tasks: ['jshint'],
 				options: {
 					livereload: true
 				}

@@ -1,8 +1,3 @@
-/*
- *  Project: Testimonials for the WanChai template
- *  Description: Show testimonials on the WanChai template
- *  Author: Simon Li
- */
 
  ;(function ( $, window, undefined ) {
 	var document = window.document,

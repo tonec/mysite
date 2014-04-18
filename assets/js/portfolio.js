@@ -1,8 +1,3 @@
-/*
- *  Project: Portfolio Plugin for the WanChai template
- *  Description: Shows portfolio items in the WanChai template
- *  Author: Simon Li
- */
 
 ;(function ( $, window, undefined ) {
 	var document = window.document,

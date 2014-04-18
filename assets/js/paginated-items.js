@@ -1,8 +1,3 @@
-/*
- *  Project: Paginated Items for the WanChai template
- *  Description: Paginate items of the same structure
- *  Author: Simon Li
- */
 
  ;(function ( $, window, undefined ) {
 	var document = window.document,

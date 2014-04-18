@@ -1,8 +1,3 @@
-/*
- *  Project: Blog Plugin for the WanChai template
- *  Description: Shows blog posts in the WanChai template
- *  Author: Simon Li
- */
 
  ;(function ( $, window, undefined ) {
 	var document = window.document,

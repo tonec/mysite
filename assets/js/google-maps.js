@@ -1,8 +1,3 @@
-/*
- *  Project: Google Maps Plugins for the WanChai template
- *  Description: Show Google Maps on the WanChai template
- *  Author: Simon Li
- */
 
  ;(function ( $, window, undefined ) {
 	var document = window.document,

@@ -197,7 +197,7 @@ label.error {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background-color: #ff7777;
+  background-color: #000000;
   color: #ffffff;
   opacity: 1;
   -webkit-transition: opacity 1s ease, z-index 1s ease;
@@ -253,13 +253,13 @@ label.error {
 .scroll-down-arrow:link,
 .scroll-down-arrow:visited {
   color: #ffffff;
-  background-color: #ff7777;
+  background-color: #000000;
 }
 .scroll-down-arrow:hover,
 .scroll-down-arrow:active {
   background-color: #ffffff;
   border-color: #ffffff;
-  color: #ff7777;
+  color: #000000;
   text-decoration: none;
 }
 .blog-iframe-container {
@@ -327,11 +327,11 @@ label.error {
   margin-top: -43px;
   top: 10%;
   position: absolute;
-  background-color: #ff7777;
+  background-color: #000000;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  box-shadow: 0 0 0 9px #ff7777;
+  box-shadow: 0 0 0 9px #000000;
   z-index: 1;
 }
 .blog-iframe-container iframe {
@@ -354,7 +354,7 @@ ul.blog-article-nav li a:visited {
 }
 ul.blog-article-nav li a:hover,
 ul.blog-article-nav li a:active {
-  color: #ff7777;
+  color: #000000;
 }
 .blog-article h1,
 .blog-article ul.info,
@@ -373,7 +373,7 @@ ul.blog-article-nav li a:active {
   font-weight: 100;
   margin: 0;
   font-size: 24px;
-  background-color: #ff7777;
+  background-color: #000000;
   color: #ffffff;
   text-align: center;
   position: fixed;
@@ -435,7 +435,7 @@ nav#main-nav .navbar-brand:visited {
   color: #ffffff;
 }
 nav#main-nav .navbar-brand:hover {
-  color: #ff7777;
+  color: #000000;
 }
 nav#main-nav .navbar-nav {
   font-size: 12px;
@@ -454,7 +454,7 @@ nav#main-nav .navbar-nav > li.active > a {
   color: #ffffff;
   background-color: transparent;
   text-shadow: 0 0 15px #ffffff, 0 0 30px #ffffff, 0 0 30px #ffffff;
-  box-shadow: inset 0 -2px 0 0 #ff7777;
+  box-shadow: inset 0 -2px 0 0 #000000;
 }
 nav#main-nav .navbar-nav > li.active > a:hover {
   color: #ffffff;
@@ -469,8 +469,8 @@ nav#main-nav .navbar-toggle .icon-bar {
 }
 nav#main-nav .navbar-toggle:hover,
 nav#main-nav .navbar-toggle:focus {
-  background-color: #ff7777;
-  border-color: #ff7777;
+  background-color: #000000;
+  border-color: #000000;
 }
 nav#main-nav .navbar-toggle:hover .icon-bar,
 nav#main-nav .navbar-toggle:focus .icon-bar {
@@ -486,7 +486,7 @@ section {
 }
 section a:link,
 section a:visited {
-  color: #ff7777;
+  color: #000000;
 }
 section h1,
 section h2,
@@ -513,7 +513,7 @@ section h1:after {
   left: 50%;
   margin-left: -50%;
   content: '';
-  background-color: #ff7777;
+  background-color: #000000;
 }
 section h2 {
   font-size: 26px;
@@ -530,7 +530,7 @@ section h6 {
   padding: 0;
 }
 section.separator {
-  background-color: #ff7777;
+  background-color: #000000;
   color: #ffffff;
   font-size: 36px;
   font-weight: 100;
@@ -576,10 +576,10 @@ section .icon {
   height: 84px;
   font-size: 40px;
   border-radius: 100%;
-  border: 1px solid #ff7777;
+  border: 1px solid #000000;
   text-align: center;
   line-height: 84px;
-  color: #ff7777;
+  color: #000000;
   margin-left: 50%;
   left: -43px;
   position: relative;
@@ -649,20 +649,20 @@ section ul.page-indicators li {
   text-indent: -999px;
   overflow: hidden;
   cursor: pointer;
-  border: 1px solid #ff7777;
+  border: 1px solid #000000;
   width: 16px;
   height: 16px;
   margin: 0 5px;
   border-radius: 14px;
 }
 section ul.page-indicators li.active {
-  background-color: #ff7777;
+  background-color: #000000;
 }
 section .button {
   display: inline-block;
-  background-color: #ff7777;
+  background-color: #000000;
   border-radius: 5px;
-  box-shadow: 0 5px 0 #ec5757;
+  box-shadow: 0 5px 0 #000000;
   padding: 5px 15px;
   margin: 0 7px 28px;
   position: relative;
@@ -676,7 +676,7 @@ section .button:visited {
 }
 section .button:hover {
   text-decoration: none;
-  background-color: #ff8686;
+  background-color: #080808;
 }
 section .button:before {
   content: '';
@@ -746,7 +746,7 @@ section .carousel .carousel-control.right:hover > span {
   opacity: 1;
 }
 section .nav-tabs {
-  border-bottom-color: #ff7777;
+  border-bottom-color: #000000;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -764,7 +764,7 @@ section .nav-tabs > li > a:hover {
 section .nav-tabs > li.active > a,
 section .nav-tabs > li.active > a:hover,
 section .nav-tabs > li.active > a:focus {
-  background-color: #ff7777;
+  background-color: #000000;
   color: #ffffff;
   border-style: none;
   border-radius: 0;
@@ -779,11 +779,11 @@ section .progress {
   box-shadow: none;
 }
 section .progress .progress-bar {
-  background-color: #ff7777;
+  background-color: #000000;
   box-shadow: none;
 }
 section.color {
-  background-color: #ff7777;
+  background-color: #000000;
   color: #ffffff;
 }
 section.color a:link,
@@ -792,8 +792,8 @@ section.color a:visited {
 }
 section.color .icon {
   border-color: #ffffff;
-  box-shadow: 0 0 0 9px #ff7777;
-  background-color: #ff7777;
+  box-shadow: 0 0 0 9px #000000;
+  background-color: #000000;
   color: #ffffff;
 }
 section.color .icon.service-icon {
@@ -822,36 +822,36 @@ section.color .button:active {
   box-shadow: none;
 }
 section.color .panel-default {
-  border-color: #ffdddd;
+  border-color: #333333;
 }
 section.color .panel-default > .panel-heading {
   background-color: transparent;
 }
 section.color .panel-default > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: #ffdddd;
+  border-top-color: #333333;
 }
 section.color .nav-tabs {
   border-bottom-color: #ffffff;
 }
 section.color .nav-tabs > li > a:hover {
-  background-color: #ffaaaa;
+  background-color: #1a1a1a;
 }
 section.color .nav-tabs > li.active > a,
 section.color .nav-tabs > li.active > a:hover,
 section.color .nav-tabs > li.active > a:focus {
   background-color: #ffffff;
-  color: #ff7777;
+  color: #000000;
 }
 section.color .progress {
   background-color: #ffffff;
 }
 section.color .progress .progress-bar {
-  background-color: #ffaaaa;
+  background-color: #1a1a1a;
 }
 section#slider {
   padding-top: 0;
   padding-bottom: 0;
-  background-color: #ff7777;
+  background-color: #000000;
   z-index: 0;
 }
 section#slider .carousel-control {
@@ -944,10 +944,10 @@ section#slider .item .carousel-caption {
 section#slider .item .carousel-caption h1 {
   color: #ffffff;
   font-size: 40px;
-  font-weight: 100;
+  font-weight: bold;
   padding: 5px 0;
   text-transform: none;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 section#slider .item .carousel-caption h1:after {
   display: none;
@@ -967,7 +967,7 @@ section#slider .item .carousel-caption a:visited {
 }
 section#slider .item .carousel-caption a:hover,
 section#slider .item .carousel-caption a:active {
-  color: #ff7777;
+  color: #000000;
 }
 section#twitter-feed {
   position: relative;
@@ -976,7 +976,7 @@ section#twitter-feed {
 }
 section#twitter-feed a:link,
 section#twitter-feed a:visited {
-  color: #ff7777;
+  color: #000000;
 }
 section#twitter-feed .tweets {
   overflow-y: hidden;
@@ -1001,10 +1001,10 @@ section#twitter-feed .tweets ul li p {
   padding: 0 0 56px;
 }
 section#services .service h3 {
-  font-weight: 100;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 18px;
+  font-size: 50px;
 }
 section#services .service p {
   font-size: 14px;
@@ -1095,8 +1095,8 @@ section#team .member .desc .social li {
   transition: all 0.3s ease;
 }
 section#team .member .desc .social li:hover {
-  background-color: #ff7777;
-  border-color: #ff7777;
+  background-color: #000000;
+  border-color: #000000;
   top: -3px;
   box-shadow: none;
 }
@@ -1131,7 +1131,7 @@ section#portfolio ul.categories {
   letter-spacing: 1px;
 }
 section#portfolio ul.categories li.current a {
-  background-color: #ff7777;
+  background-color: #000000;
   color: #ffffff;
 }
 section#portfolio ul.categories li a {
@@ -1145,12 +1145,12 @@ section#portfolio ul.categories li a {
   transition: background-color .3s ease, color .3s ease;
 }
 section#portfolio ul.categories li a:hover {
-  background-color: #ff7777;
+  background-color: #000000;
   color: #ffffff;
   text-decoration: none;
 }
 section#portfolio ul.thumbnails {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
   position: relative;
@@ -1160,6 +1160,7 @@ section#portfolio ul.thumbnails {
   -o-transition: height .3s ease;
   transition: height .3s ease;
   z-index: 2;
+  width: 828px;
 }
 section#portfolio ul.thumbnails > li.thumbnail {
   width: 25%;
@@ -1188,7 +1189,7 @@ section#portfolio ul.thumbnails > li.thumbnail.invisible {
   cursor: auto;
 }
 section#portfolio ul.thumbnails > li.thumbnail:hover .overlay {
-  background-color: rgba(255, 119, 119, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 section#portfolio ul.thumbnails > li.thumbnail:hover .overlay i {
   -webkit-transform: scale(1,1);
@@ -1202,7 +1203,7 @@ section#portfolio ul.thumbnails > li.thumbnail:hover .overlay i.fa-spin {
   color: transparent;
 }
 section#portfolio ul.thumbnails > li.thumbnail:hover .overlay.loading {
-  background-color: rgba(255, 119, 119, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 section#portfolio ul.thumbnails > li.thumbnail:hover .overlay.loading i {
   color: transparent;
@@ -1364,7 +1365,7 @@ section#portfolio .details .close-btn {
   transition: color .3s ease;
 }
 section#portfolio .details .close-btn:hover {
-  color: #ff7777;
+  color: #000000;
 }
 section#portfolio .details .title {
   font-size: 24px;
@@ -1389,7 +1390,7 @@ section#portfolio .details .desc dl dd {
 section#portfolio .details .desc dl dt {
   clear: left;
   padding-right: 5px;
-  color: #ff7777;
+  color: #000000;
 }
 section#portfolio .details .more {
   text-align: right;
@@ -1420,8 +1421,8 @@ section#portfolio .details .nav a.next {
 section#portfolio .details .nav a.prev:hover,
 section#portfolio .details .nav a.next:hover {
   text-decoration: none;
-  background-color: #ff7777;
-  border-color: #ff7777;
+  background-color: #000000;
+  border-color: #000000;
   color: #ffffff;
 }
 section#portfolio .details .nav a.prev {
@@ -1522,7 +1523,7 @@ section#contact ul.contact-info li i {
   display: inline-block;
   width: 56px;
   height: 56px;
-  color: #ff7777;
+  color: #000000;
   font-size: 56px;
   line-height: 56px;
   text-align: center;
@@ -1535,7 +1536,7 @@ section#contact ul.contact-info li a:visited {
 }
 section#contact ul.contact-info li a:hover,
 section#contact ul.contact-info li a:active {
-  color: #ff7777;
+  color: #000000;
 }
 section#contact .form-group {
   margin-left: 0;
@@ -1545,7 +1546,7 @@ section#contact #message i.fa-spin {
   display: inline-block;
   font-size: 40px;
   line-height: 40px;
-  color: #ff7777;
+  color: #000000;
 }
 section#contact button {
   width: 20%;
@@ -1591,7 +1592,7 @@ section#contact button {
 }
 section#newsletter button:hover,
 section#contact button:hover {
-  background-color: #ff7777;
+  background-color: #000000;
   color: #ffffff;
 }
 section#newsletter.color button:hover,
@@ -1636,7 +1637,7 @@ footer a:active {
   color: #000000;
 }
 footer.color {
-  background-color: #ff7777;
+  background-color: #000000;
   color: #ffffff;
 }
 footer.color ul.social-icons li a {
@@ -1645,7 +1646,7 @@ footer.color ul.social-icons li a {
 }
 footer.color ul.social-icons li a:hover {
   background-color: #ffffff;
-  color: #ff7777;
+  color: #000000;
 }
 footer p {
   margin: 0;
@@ -1664,9 +1665,9 @@ footer ul.social-icons li a {
   height: 40px;
   text-align: center;
   font-size: 20px;
-  color: #ff7777;
+  color: #000000;
   border-radius: 100%;
-  border: 1px solid #ff7777;
+  border: 1px solid #000000;
   line-height: 40px;
   -webkit-transition: all .3s cubic-bezier(0.175, 0.885, 0.320, 1.275);
   -moz-transition: all .3s cubic-bezier(0.175, 0.885, 0.320, 1.275);
@@ -1676,7 +1677,7 @@ footer ul.social-icons li a {
 }
 footer ul.social-icons li a:hover {
   text-decoration: none;
-  background-color: #ff7777;
+  background-color: #000000;
   color: #ffffff;
   -webkit-transform: scale(1.5,1.5);
   -moz-transform: scale(1.5,1.5);
@@ -1702,9 +1703,6 @@ footer ul.social-icons li a:hover {
   }
   section#slider .item .carousel-caption {
     margin-bottom: -140px;
-  }
-  section#slider .item .carousel-caption h1 {
-    font-size: 100px;
   }
   section#slider .item .carousel-caption p {
     font-size: 24px;

@@ -1,8 +1,3 @@
-/*
- *  Project: MailChimp Form Integration Plugin
- *  Description: Plugin for integrating MailChimp to the newsletter subscription form of the WanChai template
- *  Author: Simon Li
- */
 
  ;(function ( $, window, undefined ) {
 	var document = window.document,
