@@ -196,7 +196,7 @@
 				var $this = $(this);
 
 				$this.css('background-image','url("' + $this.data('background-image') + '")');
-				$this.css('background-size', 'auto ' + (winHeight + $this.innerHeight()) + 'px');
+				$this.css('background-size', '100% ' + (winHeight + $this.innerHeight()) + 'px');
 				if (self.isTouchDevice){
 					$this.css('background-position', '50% 50%');
 				} else{

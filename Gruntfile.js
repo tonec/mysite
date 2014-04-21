@@ -72,6 +72,18 @@ module.exports = function( grunt ) {
 					livereload: true
 				}
 			}
+		},
+		'ftp-deploy': {
+			build: {
+				auth: {
+					host: 'ftp.thewholeworldwindow.co.uk',
+					port: 21,
+					authKey: 'key1'
+				},
+				src: 'assets',
+				dest: '/public_html/assets',
+				exclusions: ['**/.DS_Store', '**/Thumbs.db', 'tmp']
+			}
 		}
 	});
  
@@ -79,10 +91,14 @@ module.exports = function( grunt ) {
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
  
 	// Default task
-	// Run Grunt on cmd line
 	grunt.registerTask('default', [
 		'less:dev',
 		'watch'
+	]);
+
+	// Deploy task
+	grunt.registerTask('deploy', [
+		'ftp-deploy'
 	]);
 };
 	
