@@ -25,8 +25,11 @@
 		this.detailedThumbIndex = '';
 		this.details = this.$elem.find('.details');
 		this.disableScrollSpyRefresh = true;
+		this.windowWidth = $(window).width();
 		this.options = $.extend({}, defaults, options) ;
 		this._defaults = defaults;
+
+		console.log( $( window ).width() )
 
 		// Make sure that thumbsPerRow is a positive integer
 		this.options.thumbsPerRow = parseInt(this.options.thumbsPerRow, 10);
@@ -161,12 +164,6 @@
 			detailsOffset = detailedThumb ? parseInt(this.details.innerHeight(), 10) + parseInt(this.details.css('margin-top'), 10)*2 : 0,
 			parentHeight = detailsOffset + thumbHeight * Math.ceil(this.thumbsToShow.length / this.options.thumbsPerRow);
 
-		// Adjust thumbnail size
-		this.thumbs.css({
-			width: thumbWidth,
-			height: thumbHeight
-		});
-
 		// Hide thumbnails
 		if (this.thumbsToHide.length > 0){
 			this.thumbs.removeClass('animate-zoom running');
@@ -180,9 +177,9 @@
 
 			top = (i < boundary) ? top : top + detailsOffset;
 			$(this).css({
-				position: 'absolute',
-				left: left,
-				top: top
+				// position: 'absolute',
+				// left: left,
+				// top: top
 			}).removeClass('invisible');
 		}).find('.overlay').removeClass('loading');
 
@@ -216,7 +213,7 @@
 		}
 
 		// Reset section height and Bootstrap ScrollSpy
-		parent.css('height', parentHeight);
+		// parent.css('height', parentHeight);
 		if (!this.disableScrollSpyRefresh){
 			setTimeout(function(){
 				self.refreshScrollspy();

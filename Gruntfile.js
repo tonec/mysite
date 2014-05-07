@@ -48,9 +48,6 @@ module.exports = function( grunt ) {
 				}
 			}
 		},
-		jshint: {
-			all: ['Gruntfile.js', 'js/*.js']
-		},
 		watch: {
 			html: {
 				files: 'index.html',
@@ -67,7 +64,6 @@ module.exports = function( grunt ) {
 			},
 			js: {
 				files: '<%= project.assets %>/js/*.js',
-				tasks: ['jshint'],
 				options: {
 					livereload: true
 				}

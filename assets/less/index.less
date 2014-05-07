@@ -383,7 +383,7 @@ nav#main-nav{
 		}
 
 		&:hover{
-			color: @color1;
+			color: @color2;
 		}
 	}
 
@@ -1234,16 +1234,16 @@ section{
 			position: relative;
 			.transition(~'height .3s ease');
 			z-index: 2;
-			width: 828px;
+			width: 276px;
 
 			&>li.thumbnail{
-				width: 25%;	
+				width: 276px;	
 				.box-sizing(border-box);
 				cursor: pointer;
 				float: left;
-				margin: 0;
+				margin: 0 auto;
 				padding: 0;
-				height: 160px;
+				height: 276px;
 				background-color: transparent;
 				border-radius: 0;
 				border-width: 0;
@@ -1775,6 +1775,25 @@ footer{
 }
 
 // Media quiries
+
+@media (min-width: 682px) and (max-width: 1029px){
+	section#portfolio {
+		ul.thumbnails {
+			width: 552px;
+			margin: 0 auto;
+		}
+	}
+}
+
+@media (min-width: 1030px) {
+	section#portfolio {
+		ul.thumbnails {
+			width: 828px;
+			margin: 0 auto;
+		}
+	}
+}
+
 @media (min-width: 992px){
 	nav#main-nav{
 		.navbar-header{
@@ -1787,9 +1806,11 @@ footer{
 		}
 	}
 
-	section#portfolio .details{
-		&:before, &:after{
-			display: block;
+	section#portfolio {
+		.details{
+			&:before, &:after{
+				display: block;
+			}
 		}
 	}
 }
