@@ -1324,7 +1324,7 @@ section#portfolio .details .row {
   margin-bottom: 0;
 }
 section#portfolio .details .image img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   margin-bottom: 14px;
 }
